@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "695277239779",
+    "project_id": "businesspostermaker-e2596",
+    "storage_bucket": "businesspostermaker-e2596.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695277239779:android:c8d7785b85b79d41ea74d6",
+        "android_client_info": {
+          "package_name": "meet.anayacoders.businesspostermaker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA88Pc4p6sCbaHGjGQIROFR-HISWGhz0Ck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
