@@ -1,5 +1,170 @@
 package meet.anayacoders.businesspostermaker.other
 
 object Constants {
-    const val BASE_URL = "http://192.168.62.157:3000/api/"
+
+    const val APP_NAME = "Business Poster Maker"
+
+    const val BASE_URL = "https://business-poster-maker-api.vercel.app/api/"
+
+    const val ITEM_TYPE_BANNER = "BANNER"
+    const val ITEM_TYPE_UPCOMING_EVENT = "UPCOMING_EVENT"
+    const val ITEM_TYPE_GENERAL_EVENT = "POSTER"
+    const val ITEM_TYPE_CATEGORY = "CATEGORY"
+
+
+
+    val eventCategoryList = listOf(
+        "--Select category--",
+        "Business",
+        "Education",
+        "Health & Wellness",
+        "Travel",
+        "Technology",
+        "Food & Beverage",
+        "Sports",
+        "Entertainment",
+        "Fashion",
+        "Beauty",
+        "Real Estate",
+        "Art & Design",
+        "Photography",
+        "Music",
+        "Events",
+        "Non-Profit",
+        "Fitness",
+        "Lifestyle",
+        "Nature",
+        "Animals",
+        "Automobiles",
+        "Finance",
+        "Personal Development",
+        "Shopping",
+        "Celebrations",
+        "Motivational",
+        "Religious",
+        "Festival Greetings",
+        "Seasonal Promotions",
+        "Marketing & Advertising",
+        "Job Vacancies",
+        "Startups",
+        "Quotes & Sayings",
+        "Kids & Parenting",
+        "Books & Literature",
+        "Science",
+        "Gaming",
+        "Politics",
+        "Environment",
+        "Adventure",
+        "Hobbies & Crafts",
+        "Agriculture",
+        "History",
+        "Luxury",
+        "Fitness Challenges",
+        "Social Awareness",
+        "Community Events",
+        "Wedding Announcements",
+        "Anniversaries",
+        "Daily Tips"
+    ).sorted()
+
+    val eventLanguageList = listOf(
+        "--Select language--",
+        "Gujarati",
+        "English",
+        "Hindi"
+    )
+
+    val allFestivalsList = listOf(
+        "--Select Festival--",
+        "Akshaya Tritiya",
+        "Amarnath Yatra",
+        "Anant Chaturdashi",
+        "Ashtami Rohini",
+        "Attukal Pongala",
+        "Ayyappan Puja",
+        "Bakrid (Eid al-Adha)",
+        "Basant Panchami",
+        "Baudh Purnima",
+        "Bhogi",
+        "Bihu",
+        "Buddha Jayanti",
+        "Chaitra Navratri",
+        "Cheti Chand",
+        "Christmas",
+        "Chhath Puja",
+        "Dhanteras",
+        "Diwali",
+        "Durga Ashtami",
+        "Durga Puja",
+        "Easter",
+        "Eid al-Adha",
+        "Eid al-Fitr",
+        "Ganesh Chaturthi",
+        "Ganga Dussehra",
+        "Gauri Habba",
+        "Gokulashtami",
+        "Good Friday",
+        "Gudi Padwa",
+        "Guru Nanak Jayanti",
+        "Hanuman Jayanti",
+        "Hartalika Teej",
+        "Hemis Festival",
+        "Holi",
+        "Independence Day",
+        "Janmashtami",
+        "Karva Chauth",
+        "Kartik Purnima",
+        "Krishna Janmashtami",
+        "Kumbh Mela",
+        "Lohri",
+        "Makar Sankranti",
+        "Mahashivratri",
+        "Mahavir Jayanti",
+        "Maha Vishuba Sankranti",
+        "Moatsu Festival",
+        "Mopin Festival",
+        "Nag Panchami",
+        "Navaratri",
+        "Navroz (Parsi New Year)",
+        "New Year",
+        "Nuakhai",
+        "Onam",
+        "Paryushan Parva",
+        "Pongal",
+        "Puthandu",
+        "Rakhi (Raksha Bandhan)",
+        "Ramadan",
+        "Ramnavami",
+        "Rath Yatra",
+        "Republic Day",
+        "Rosh Hashanah",
+        "Shab-e-Barat",
+        "Shivaji Jayanti",
+        "Shitala Ashtami",
+        "Sitala Puja",
+        "Sri Ram Navami",
+        "Teacher's Day",
+        "Teej Festival",
+        "Thanksgiving",
+        "Ugadi",
+        "Vaisakhi",
+        "Valentine's Day",
+        "Varalakshmi Puja",
+        "Vasant Panchami",
+        "Vinayaka Chaturthi",
+        "Vishu",
+        "World Environment Day",
+        "World Tourism Day",
+        "Yamuna Chhath",
+        "Yule",
+        "Zoroastrian New Year"
+    ).sorted()
+
+    val posterType = mapOf(
+        "--Select Type--" to emptyList(),
+        "Festival" to allFestivalsList,
+        "General" to eventCategoryList,
+//        "Business"
+    )
+
 }

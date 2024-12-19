@@ -2,6 +2,7 @@ package meet.anayacoders.businesspostermaker.ui.component
 
 import meet.anayacoders.businesspostermaker.R
 
+
 sealed class BottomNavItems(
     val route : String,
     val label : String,
@@ -35,6 +36,30 @@ sealed class BottomNavItems(
     object Search : BottomNavItems(
         route = "search",
         label = "Search",
+        selectedIcon = null,
+        unSelectedIcon = null
+    )
+    object CategoryGallery : BottomNavItems(
+        route = "category_gallery",
+        label = "Category Gallery",
+        selectedIcon = null,
+        unSelectedIcon = null
+    )
+    object GeneralEventGallery : BottomNavItems(
+        route = "general_event_gallery",
+        label = "General Event Gallery",
+        selectedIcon = null,
+        unSelectedIcon = null
+    )
+    object UpcomingEventGallery : BottomNavItems(
+        route = "upcoming_event_gallery",
+        label = "Upcoming Event Gallery",
+        selectedIcon = null,
+        unSelectedIcon = null
+    )
+    object EditPosterScreen : BottomNavItems(
+        route = "edit_poster_screen",
+        label = "Edit Poster Screen",
         selectedIcon = null,
         unSelectedIcon = null
     )

@@ -98,6 +98,7 @@ dependencies {
     //Coil - Image loading
     implementation("io.coil-kt:coil-compose:2.7.0")
 
+    implementation("dev.shreyaspatil:capturable:3.0.0")
 }
 
 kapt {

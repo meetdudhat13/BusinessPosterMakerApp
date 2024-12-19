@@ -3,6 +3,8 @@ package meet.anayacoders.businesspostermaker.ui.component
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.KeyboardActions
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Icon
@@ -12,11 +14,17 @@ import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
 
 @Composable
 fun SearchBarMSD(
-    modifier: Modifier, isEnable:Boolean, query: String, onValueChanged: (String) -> Unit
+    modifier: Modifier,
+    isEnable: Boolean,
+    query: String,
+    hintText: String,
+    onValueChanged: (String) -> Unit,
+    search: () -> Unit
 ) {
     Row {
         TextField(value = query,
@@ -31,7 +39,15 @@ fun SearchBarMSD(
             ),
             enabled = isEnable,
             shape = RoundedCornerShape(8.dp),
-            placeholder = { Text("Search Upcoming Event Here...") },
+            keyboardOptions = KeyboardOptions.Default.copy(
+                imeAction = ImeAction.Search
+            ),
+            keyboardActions = KeyboardActions(
+                onSearch = {
+                    search()
+                }
+            ),
+            placeholder = { Text(hintText) },
             leadingIcon = {
                 Icon(
                     imageVector = Icons.Default.Search, contentDescription = ""
